@@ -33,6 +33,13 @@ namespace Prueba_
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PiePag = new System.Windows.Forms.Panel();
+            this.PanelUsuario = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.USUARIO = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -56,6 +63,14 @@ namespace Prueba_
             this.pnlValores = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.pnlfacturar = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lbliva = new System.Windows.Forms.Label();
+            this.lblTotalPago = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblSubT = new System.Windows.Forms.Label();
+            this.lblDescOtro = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.lblDesc = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -148,22 +163,9 @@ namespace Prueba_
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.Relleno = new System.Windows.Forms.Panel();
-            this.PanelUsuario = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.USUARIO = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lbliva = new System.Windows.Forms.Label();
-            this.lblTotalPago = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblSubT = new System.Windows.Forms.Label();
-            this.lblDescOtro = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.lblDesc = new System.Windows.Forms.Label();
             this.PiePag.SuspendLayout();
+            this.PanelUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlcontenedortap.SuspendLayout();
             this.tbMenu.SuspendLayout();
@@ -172,6 +174,7 @@ namespace Prueba_
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.pnlValores.SuspendLayout();
             this.pnlfacturar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.pnlProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -185,9 +188,6 @@ namespace Prueba_
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.panelbotones.SuspendLayout();
             this.pnlFechaHora.SuspendLayout();
-            this.PanelUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // PiePag
@@ -202,6 +202,88 @@ namespace Prueba_
             this.PiePag.Size = new System.Drawing.Size(1325, 68);
             this.PiePag.TabIndex = 1;
             this.PiePag.MouseEnter += new System.EventHandler(this.panelbotones_MouseLeave);
+            // 
+            // PanelUsuario
+            // 
+            this.PanelUsuario.Controls.Add(this.pictureBox1);
+            this.PanelUsuario.Controls.Add(this.USUARIO);
+            this.PanelUsuario.Controls.Add(this.label2);
+            this.PanelUsuario.Controls.Add(this.label1);
+            this.PanelUsuario.Controls.Add(this.button1);
+            this.PanelUsuario.Controls.Add(this.label3);
+            this.PanelUsuario.Location = new System.Drawing.Point(1120, 6);
+            this.PanelUsuario.Name = "PanelUsuario";
+            this.PanelUsuario.Size = new System.Drawing.Size(200, 62);
+            this.PanelUsuario.TabIndex = 80;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::Prueba_.Properties.Resources.usuario1;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // USUARIO
+            // 
+            this.USUARIO.AutoSize = true;
+            this.USUARIO.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.USUARIO.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.USUARIO.Location = new System.Drawing.Point(53, 4);
+            this.USUARIO.Name = "USUARIO";
+            this.USUARIO.Size = new System.Drawing.Size(130, 10);
+            this.USUARIO.TabIndex = 9;
+            this.USUARIO.Text = "EDUARDO ERICKSOON STEVEZ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(53, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 10);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "PUESTO";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(140, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 10);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "USUARIO";
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(13, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(171, 24);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "REVISAR PERFIL";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(10, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "_____________________________";
             // 
             // label5
             // 
@@ -501,6 +583,106 @@ namespace Prueba_
             this.pnlfacturar.Size = new System.Drawing.Size(281, 478);
             this.pnlfacturar.TabIndex = 75;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(140)))), ((int)(((byte)(238)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(173, 440);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 33);
+            this.button2.TabIndex = 88;
+            this.button2.Text = "Finalizar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // lbliva
+            // 
+            this.lbliva.AutoSize = true;
+            this.lbliva.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lbliva.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbliva.ForeColor = System.Drawing.Color.Black;
+            this.lbliva.Location = new System.Drawing.Point(239, 133);
+            this.lbliva.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbliva.Name = "lbliva";
+            this.lbliva.Size = new System.Drawing.Size(36, 16);
+            this.lbliva.TabIndex = 90;
+            this.lbliva.Text = "0,00";
+            // 
+            // lblTotalPago
+            // 
+            this.lblTotalPago.AutoSize = true;
+            this.lblTotalPago.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblTotalPago.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPago.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalPago.Location = new System.Drawing.Point(181, 243);
+            this.lblTotalPago.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalPago.Name = "lblTotalPago";
+            this.lblTotalPago.Size = new System.Drawing.Size(94, 45);
+            this.lblTotalPago.TabIndex = 93;
+            this.lblTotalPago.Text = "0,00";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(189, 353);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.TabIndex = 94;
+            // 
+            // lblSubT
+            // 
+            this.lblSubT.AutoSize = true;
+            this.lblSubT.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblSubT.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubT.ForeColor = System.Drawing.Color.Black;
+            this.lblSubT.Location = new System.Drawing.Point(239, 100);
+            this.lblSubT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSubT.Name = "lblSubT";
+            this.lblSubT.Size = new System.Drawing.Size(36, 16);
+            this.lblSubT.TabIndex = 89;
+            this.lblSubT.Text = "0,00";
+            // 
+            // lblDescOtro
+            // 
+            this.lblDescOtro.AutoSize = true;
+            this.lblDescOtro.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblDescOtro.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescOtro.ForeColor = System.Drawing.Color.Black;
+            this.lblDescOtro.Location = new System.Drawing.Point(239, 200);
+            this.lblDescOtro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescOtro.Name = "lblDescOtro";
+            this.lblDescOtro.Size = new System.Drawing.Size(36, 16);
+            this.lblDescOtro.TabIndex = 92;
+            this.lblDescOtro.Text = "0,00";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(241, 5);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 87;
+            this.pictureBox14.TabStop = false;
+            // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblDesc.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.ForeColor = System.Drawing.Color.Black;
+            this.lblDesc.Location = new System.Drawing.Point(239, 167);
+            this.lblDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(36, 16);
+            this.lblDesc.TabIndex = 91;
+            this.lblDesc.Text = "0,00";
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -731,7 +913,7 @@ namespace Prueba_
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(20, 37);
+            this.comboBox1.Location = new System.Drawing.Point(17, 32);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(302, 21);
@@ -1763,194 +1945,12 @@ namespace Prueba_
             this.Relleno.Size = new System.Drawing.Size(48, 46);
             this.Relleno.TabIndex = 42;
             // 
-            // PanelUsuario
-            // 
-            this.PanelUsuario.Controls.Add(this.pictureBox1);
-            this.PanelUsuario.Controls.Add(this.USUARIO);
-            this.PanelUsuario.Controls.Add(this.label2);
-            this.PanelUsuario.Controls.Add(this.label1);
-            this.PanelUsuario.Controls.Add(this.button1);
-            this.PanelUsuario.Controls.Add(this.label3);
-            this.PanelUsuario.Location = new System.Drawing.Point(1120, 6);
-            this.PanelUsuario.Name = "PanelUsuario";
-            this.PanelUsuario.Size = new System.Drawing.Size(200, 62);
-            this.PanelUsuario.TabIndex = 80;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::Prueba_.Properties.Resources.usuario1;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // USUARIO
-            // 
-            this.USUARIO.AutoSize = true;
-            this.USUARIO.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.USUARIO.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.USUARIO.Location = new System.Drawing.Point(53, 4);
-            this.USUARIO.Name = "USUARIO";
-            this.USUARIO.Size = new System.Drawing.Size(130, 10);
-            this.USUARIO.TabIndex = 9;
-            this.USUARIO.Text = "EDUARDO ERICKSOON STEVEZ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6F);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(53, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 10);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "PUESTO";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(140, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 10);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "USUARIO";
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(13, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 24);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "REVISAR PERFIL";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(10, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "_____________________________";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(140)))), ((int)(((byte)(238)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(173, 440);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 33);
-            this.button2.TabIndex = 88;
-            this.button2.Text = "Finalizar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // lbliva
-            // 
-            this.lbliva.AutoSize = true;
-            this.lbliva.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.lbliva.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbliva.ForeColor = System.Drawing.Color.Black;
-            this.lbliva.Location = new System.Drawing.Point(239, 133);
-            this.lbliva.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbliva.Name = "lbliva";
-            this.lbliva.Size = new System.Drawing.Size(36, 16);
-            this.lbliva.TabIndex = 90;
-            this.lbliva.Text = "0,00";
-            // 
-            // lblTotalPago
-            // 
-            this.lblTotalPago.AutoSize = true;
-            this.lblTotalPago.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.lblTotalPago.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPago.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalPago.Location = new System.Drawing.Point(181, 243);
-            this.lblTotalPago.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalPago.Name = "lblTotalPago";
-            this.lblTotalPago.Size = new System.Drawing.Size(94, 45);
-            this.lblTotalPago.TabIndex = 93;
-            this.lblTotalPago.Text = "0,00";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(189, 353);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
-            this.textBox1.TabIndex = 94;
-            // 
-            // lblSubT
-            // 
-            this.lblSubT.AutoSize = true;
-            this.lblSubT.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.lblSubT.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubT.ForeColor = System.Drawing.Color.Black;
-            this.lblSubT.Location = new System.Drawing.Point(239, 100);
-            this.lblSubT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSubT.Name = "lblSubT";
-            this.lblSubT.Size = new System.Drawing.Size(36, 16);
-            this.lblSubT.TabIndex = 89;
-            this.lblSubT.Text = "0,00";
-            // 
-            // lblDescOtro
-            // 
-            this.lblDescOtro.AutoSize = true;
-            this.lblDescOtro.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.lblDescOtro.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescOtro.ForeColor = System.Drawing.Color.Black;
-            this.lblDescOtro.Location = new System.Drawing.Point(239, 200);
-            this.lblDescOtro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDescOtro.Name = "lblDescOtro";
-            this.lblDescOtro.Size = new System.Drawing.Size(36, 16);
-            this.lblDescOtro.TabIndex = 92;
-            this.lblDescOtro.Text = "0,00";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(241, 5);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(29, 28);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 87;
-            this.pictureBox14.TabStop = false;
-            // 
-            // lblDesc
-            // 
-            this.lblDesc.AutoSize = true;
-            this.lblDesc.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.lblDesc.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.ForeColor = System.Drawing.Color.Black;
-            this.lblDesc.Location = new System.Drawing.Point(239, 167);
-            this.lblDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(36, 16);
-            this.lblDesc.TabIndex = 91;
-            this.lblDesc.Text = "0,00";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1324, 761);
+            this.ClientSize = new System.Drawing.Size(1324, 749);
             this.Controls.Add(this.Relleno);
             this.Controls.Add(this.pnlFechaHora);
             this.Controls.Add(this.PiePag);
@@ -1964,6 +1964,9 @@ namespace Prueba_
             this.MouseEnter += new System.EventHandler(this.panelbotones_MouseLeave);
             this.PiePag.ResumeLayout(false);
             this.PiePag.PerformLayout();
+            this.PanelUsuario.ResumeLayout(false);
+            this.PanelUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlcontenedortap.ResumeLayout(false);
             this.tbMenu.ResumeLayout(false);
@@ -1975,6 +1978,7 @@ namespace Prueba_
             this.pnlValores.PerformLayout();
             this.pnlfacturar.ResumeLayout(false);
             this.pnlfacturar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.pnlProductos.ResumeLayout(false);
             this.pnlProductos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -1993,10 +1997,6 @@ namespace Prueba_
             this.panelbotones.ResumeLayout(false);
             this.pnlFechaHora.ResumeLayout(false);
             this.pnlFechaHora.PerformLayout();
-            this.PanelUsuario.ResumeLayout(false);
-            this.PanelUsuario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
 
         }
